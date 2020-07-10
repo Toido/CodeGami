@@ -33,6 +33,16 @@ const styles = (theme) => ({
     marginTop: theme.spacing(0.5),
     background: 'currentColor',
   },
+  markedH3Justify: {
+    height: 2,
+    width: 28,
+    display: 'block',
+    marginTop: theme.spacing(0.5),
+    background: 'currentColor',
+  },
+  markedH3JustifyAlign: {
+    textAlign: 'justify',
+  },
 });
 
 const variantMapping = {
@@ -46,10 +56,10 @@ const variantMapping = {
 };
 
 function Typography(props) {
-  const { children, classes, marked = false, variant, ...other } = props;
+  const { children, classes, marked=false, variant, ...other } = props;
 
   return (
-    <MuiTypography variantMapping={variantMapping} variant={variant} {...other}>
+    <MuiTypography className={marked ? `marked${capitalize(variant) + capitalize(marked)}Align` : null} variantMapping={variantMapping} variant={variant} {...other}>
       {children}
       {marked ? (
         <span
@@ -65,7 +75,7 @@ function Typography(props) {
 Typography.propTypes = {
   children: PropTypes.node,
   classes: PropTypes.object.isRequired,
-  marked: PropTypes.oneOf([false, 'center', 'left']),
+  marked: PropTypes.oneOf([false, 'center', 'left', 'justify']),
   variant: PropTypes.string,
 };
 

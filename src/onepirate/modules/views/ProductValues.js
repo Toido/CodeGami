@@ -29,6 +29,11 @@ const styles = (theme) => ({
   title: {
     marginTop: theme.spacing(5),
     marginBottom: theme.spacing(5),
+    typography: {
+      fontFamily: [
+
+      ],
+    },
   },
   curvyLines: {
     pointerEvents: 'none',
@@ -40,11 +45,15 @@ const styles = (theme) => ({
 function ProductValues(props) {
   const { classes } = props;
 
+  const webAppMessage = "Have a hand at the customization of your very own website. We'll provide you with the support you'll need when creating your website from the ground up.";
+  const mobileAppMessage = "Take hold of your application. With the ever increasing number of phones, what better way to introduce your application by distributing it to the general public.";
+  const bChainMessage = "Don't let the old technology chain you down. With BlockChain, you can manage your data in a more secure way. And with our service, we will help you start with a solid foundation.";
+
   return (
     <section className={classes.root}>
       <Container className={classes.container}>
         <img
-          src="/static/themes/onepirate/productCurvyLines.png"
+          src={require("../../onepirate-img/productCurvyLines.png")}
           className={classes.curvyLines}
           alt="curvy lines"
         />
@@ -53,19 +62,14 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img
                 className={classes.image}
-                src="/static/themes/onepirate/productValues1.svg"
-                alt="suitcase"
+                src={require("../../onepirate-img/webDev.png")}
+                alt="webDev"
               />
               <Typography variant="h6" className={classes.title}>
-                The best luxury hotels
+                Web Development
               </Typography>
-              <Typography variant="h5">
-                {
-                  'From the latest trendy boutique hotel to the iconic palace with XXL pool'
-                }
-                {
-                  ', go for a mini-vacation just a few subway stops away from your home.'
-                }
+              <Typography variant="h5" marked="justify">
+                {webAppMessage}
               </Typography>
             </div>
           </Grid>
@@ -73,17 +77,14 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img
                 className={classes.image}
-                src="/static/themes/onepirate/productValues2.svg"
-                alt="graph"
+                src={require("../../onepirate-img/mobileDev.png")}
+                alt="mobileDev"
               />
               <Typography variant="h6" className={classes.title}>
-                New experiences
+                Mobile Development
               </Typography>
               <Typography variant="h5">
-                {
-                  'Privatize a pool, take a Japanese bath or wake up in 900m2 of garden… '
-                }
-                {'your Sundays will not be alike.'}
+                {mobileAppMessage}
               </Typography>
             </div>
           </Grid>
@@ -91,15 +92,14 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img
                 className={classes.image}
-                src="/static/themes/onepirate/productValues3.svg"
-                alt="clock"
+                src={require("../../onepirate-img/blockChain.png")}
+                alt="blockChain"
               />
               <Typography variant="h6" className={classes.title}>
-                Exclusive rates
+                Blockchain Development
               </Typography>
-              <Typography variant="h5">
-                {'By registering, you will access specially negotiated rates '}
-                {'that you will not find anywhere else.'}
+              <Typography variant="h5" marked="justify">
+                {bChainMessage}
               </Typography>
             </div>
           </Grid>

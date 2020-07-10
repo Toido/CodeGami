@@ -58,7 +58,7 @@ function ProductHowItWorks(props) {
     <section className={classes.root}>
       <Container className={classes.container}>
         <img
-          src="/static/themes/onepirate/productCurvyLines.png"
+          src={require("../../onepirate-img/productCurvyLines.png")}
           className={classes.curvyLines}
           alt="curvy lines"
         />
@@ -76,7 +76,7 @@ function ProductHowItWorks(props) {
               <div className={classes.item}>
                 <div className={classes.number}>1.</div>
                 <img
-                  src="/static/themes/onepirate/productHowItWorks1.svg"
+                  src={require("../../onepirate-img/productHowItWorks1.svg")}
                   alt="suitcase"
                   className={classes.image}
                 />
@@ -89,7 +89,7 @@ function ProductHowItWorks(props) {
               <div className={classes.item}>
                 <div className={classes.number}>2.</div>
                 <img
-                  src="/static/themes/onepirate/productHowItWorks2.svg"
+                  src={require("../../onepirate-img/productHowItWorks2.svg")}
                   alt="graph"
                   className={classes.image}
                 />
@@ -103,7 +103,7 @@ function ProductHowItWorks(props) {
               <div className={classes.item}>
                 <div className={classes.number}>3.</div>
                 <img
-                  src="/static/themes/onepirate/productHowItWorks3.svg"
+                  src={require("../../onepirate-img/productHowItWorks3.svg")}
                   alt="clock"
                   className={classes.image}
                 />

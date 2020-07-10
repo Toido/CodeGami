@@ -90,7 +90,7 @@ export default function AppFooter() {
               <Grid item className={classes.icons}>
                 <a href="https://material-ui.com/" className={classes.icon}>
                   <img
-                    src="/static/themes/onepirate/appFooterFacebook.png"
+                    src={require("../../onepirate-img/appFooterFacebook.png")}
                     alt="Facebook"
                   />
                 </a>
@@ -99,7 +99,7 @@ export default function AppFooter() {
                   className={classes.icon}
                 >
                   <img
-                    src="/static/themes/onepirate/appFooterTwitter.png"
+                    src={require("../../onepirate-img/appFooterTwitter.png")}
                     alt="Twitter"
                   />
                 </a>

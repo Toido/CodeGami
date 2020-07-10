@@ -9,12 +9,14 @@ import ProductValues from './modules/views/ProductValues';
 import ProductHowItWorks from './modules/views/ProductHowItWorks';
 import ProductCTA from './modules/views/ProductCTA';
 import AppAppBar from './modules/views/AppAppBar';
+import AboutUs from './modules/views/AboutUs';
 
 function Index() {
   return (
     <React.Fragment>
       <AppAppBar />
       <ProductHero />
+      <AboutUs />
       <ProductValues />
       <ProductCategories />
       <ProductHowItWorks />

@@ -9,16 +9,18 @@ import Toolbar, { styles as toolbarStyles } from '../components/Toolbar';
 const styles = (theme) => ({
   title: {
     fontSize: 24,
+    color: '#1DCDFE',
   },
   placeholder: toolbarStyles(theme).root,
   toolbar: {
+    //backgroundImage: 'linear-gradient(#1DCDFE, #21D0B2, #3F5C5)',
     justifyContent: 'space-between',
   },
   left: {
     flex: 1,
   },
   leftLinkActive: {
-    color: theme.palette.common.white,
+    //color: theme.palette.common.white,
   },
   right: {
     flex: 1,
@@ -27,7 +29,7 @@ const styles = (theme) => ({
   },
   rightLink: {
     fontSize: 16,
-    color: theme.palette.common.white,
+    color: '#21D0B2',
     marginLeft: theme.spacing(3),
   },
   linkSecondary: {
@@ -48,9 +50,9 @@ function AppAppBar(props) {
             underline="none"
             color="inherit"
             className={classes.title}
-            href="/premium-themes/onepirate/"
+            href="/"
           >
-            {'onepirate'}
+            {'codegami'}
           </Link>
           <div className={classes.right}>
             <Link

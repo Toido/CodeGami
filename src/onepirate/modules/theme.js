@@ -1,6 +1,22 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 import { green, grey, red } from '@material-ui/core/colors';
 
+//import GloriaTtf from './GloriaHallelujah-Regular.ttf';
+
+// const gloria = {
+//   fontFamily: 'Gloria Hallelujah',
+//   fontStyle: 'normal',
+//   fontDisplay: 'swap',
+//   fontWeight: 400,
+//   src: "local('Gloria Hallelujah'), local('GloriaHallelujah-Regular)', url($"{GloriaTtf}") format('ttf')",
+//   unicodeRange:
+//     'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF',
+// };
+
+
+
+
+
 const rawTheme = createMuiTheme({
   palette: {
     primary: {
@@ -29,12 +45,11 @@ const rawTheme = createMuiTheme({
     },
   },
   typography: {
-    fontFamily: "'Work Sans', sans-serif",
+    fontFamily:  "Georgia",
     fontSize: 14,
-    fontWeightLight: 300, // Work Sans
-    fontWeightRegular: 400, // Work Sans
-    fontWeightMedium: 700, // Roboto Condensed
-    fontFamilySecondary: "'Roboto Condensed', sans-serif",
+    //fontWeightLight: 300, // Work Sans
+    //fontWeightRegular: 400, // Work Sans
+    //fontWeightMedium: 700, // Roboto Condensed
   },
 });
 
